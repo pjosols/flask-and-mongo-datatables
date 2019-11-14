@@ -6,7 +6,7 @@ A sample website that shows how to use mongo-datatables with Flask.
 
 ## Get started
 
-You can install with pip:
+Clone the repo and install the requirements to get started.
 
       git clone git@github.com:pauljolsen/flask-and-mongo-datatables.git flask-demo
       cd flask-demo
