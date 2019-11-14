@@ -13,7 +13,9 @@ You can install with pip:
 
 ## DataTables static files
 
-This is what I downloaded from DataTables
+These are the packages I linked to from DataTables. Note that I have excluded the Editor from
+this demo because you have to pay to use Editor.  If you go that route, you'll have to download
+DataTables static files and plug them into your Flask app.
 
 ![datatables static files](datatables_packages.png)
 
