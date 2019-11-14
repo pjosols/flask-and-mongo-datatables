@@ -15,6 +15,8 @@ You can install with pip:
       pip install -r requirements.txt 
       flask run -p 5005
 
+Of course you'll need a MongoDB running on localhost, and the 'contracts' collection with a few documents
+using the keys seen in the table_view.html template: ExpiryDate, ContractId, Vendor, and Note.
 
 ## DataTables static files
 
