@@ -15,7 +15,7 @@ You can install with pip:
 
 This is what I downloaded from DataTables
 
-![datatables static files](datatables_packages.jpg)
+![datatables static files](datatables_packages.png)
 
 
 ## mongo-datatables
