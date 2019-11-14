@@ -13,7 +13,7 @@ Clone the repo and install the requirements to get started.
       virtualenv -p python3 ~/.venvs/flask-demo
       source ~/.venvs/flask-demo/bin/activate
       pip install -r requirements.txt 
-      flask run -p 5005
+      flask run
 
 Of course you'll need a MongoDB running on localhost, and the 'contracts' collection with a few documents
 using the keys seen in the table_view.html template: ExpiryDate, ContractId, Vendor, and Note.
