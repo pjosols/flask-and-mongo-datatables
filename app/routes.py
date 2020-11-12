@@ -1,8 +1,5 @@
-import json
-
-from flask import render_template, request
+from flask import render_template, request, jsonify
 from mongo_datatables import DataTables
-
 from app import app, mongo
 
 
@@ -18,8 +15,8 @@ def table_view():
     return render_template('table_view.html')
 
 
-@app.route('/mongo/<collection>')
+@app.route('/mongo/<collection>', methods=['POST'])
 def api_db(collection):
-    request_args = json.loads(request.values.get("args"))
-    results = DataTables(mongo, collection, request_args).get_rows()
-    return json.dumps(results)
+    data = request.get_json()
+    results = DataTables(mongo, collection, data).get_rows()
+    return jsonify(results)

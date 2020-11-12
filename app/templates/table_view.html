@@ -32,21 +32,21 @@
         $(function () {
             $('#dt_table').DataTable({
                 serverSide: true,
+
                 ajax: {
-                    url: '{{ url_for('api_db', collection='contracts') }}',
+                    url: '{{ url_for('api_db', collection='mdt3') }}',
                     dataSrc: 'data',
-                    type: 'GET',
-                    data: function (args) {
-                        return {
-                            "args": JSON.stringify(args)
-                        };
+                    type: 'POST',
+                    contentType: 'application/json',
+                    data: function (d) {
+                        return  JSON.stringify(d)
                     }
                 },
                 columns: [
                     {data: 'ExpiryDate'},
                     {data: 'ContractId'},
                     {data: 'Vendor'},
-                    {data: 'Note'}
+                    {data: 'Note'},
                 ]
             });
 
